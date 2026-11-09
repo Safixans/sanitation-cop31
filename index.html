@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="uz-Latn">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Maket — Chiqindilarni boshqarish va sirkulyar iqtisodiyotni rivojlantirish agentligi</title>
+<meta name="description" content="Chiqindilarni boshqarish va sirkulyar iqtisodiyotni rivojlantirish agentligi · Milliy loyiha">
+<meta name="theme-color" content="#0A3322">
+<meta name="robots" content="noindex">
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="preload" href="fonts/manrope-latin-600-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="fonts.css">
+  <script type="module" crossorigin src="./assets/main-BdXyHq05.js"></script>
+  <link rel="modulepreload" crossorigin href="./assets/i18n-Coo08iTp.js">
+  <link rel="stylesheet" crossorigin href="./assets/main-DtxUJx4T.css">
+</head>
+<body>
+<div class="stage" id="stage">
+  <canvas id="c" role="img" tabindex="0" aria-describedby="modelDesc modelKeys"></canvas>
+  <p id="modelKeys" class="sr" data-u="keys"></p>
+  <h1 class="sr" data-f="org"></h1>
+  <p id="modelDesc" class="sr" data-u="model"></p>
+  <div class="labels" id="labels"></div>
+  <div class="loading" id="loading" role="status"><span class="spin" aria-hidden="true"></span><span data-u="loading"></span></div>
+</div>
+
+<header class="top">
+  <div class="tools">
+    <div class="langs" role="group" data-ua="lang">
+      <button type="button" data-l="uz" lang="uz-Latn" aria-label="UZ, Oʻzbekcha">UZ</button><button type="button" data-l="ru" lang="ru" aria-label="RU, Русский">RU</button><button type="button" data-l="en" lang="en" aria-label="EN, English">EN</button>
+    </div>
+    <button type="button" class="rotbtn" id="rotBtn" aria-pressed="true" data-ua="rotate"><svg class="pause" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14M16 5v14" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/></svg><svg class="play" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 4.5v15l12-7.5z" fill="currentColor"/></svg></button>
+    <button type="button" class="arbtn" id="arBtn" hidden><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 3 7v10l9 5 9-5V7l-9-5Zm0 2.3 6.6 3.7L12 11.7 5.4 8 12 4.3ZM5 9.7l6 3.4v6.6l-6-3.4V9.7Zm8 10v-6.6l6-3.4v6.6l-6 3.4Z" fill="currentColor"/></svg><span data-u="ar"></span></button>
+  </div>
+  <!-- owner 3485: logo on its own, name under it, both link to the agency page on gov.uz; tools sit above -->
+  <a class="brand" href="https://gov.uz/en/sanitation/activity_page/ommaviy-tadbirlar" target="_blank" rel="noopener"><img src="logo.png" alt="" width="40" height="48"><span data-f="org"></span></a>
+</header>
+
+<nav class="picker" id="picker" aria-labelledby="pickerTitle">
+  <p class="hint" id="pickerTitle" data-u="pick"></p>
+  <div class="chips">
+    <!-- pass 7: cards follow the maket - project 2 (left half) on the left, project 1 Temir (right half) on the right -->
+    <a class="chip" data-p="project-left" href="loyiha-2/" style="--acc:var(--acc-left)"><span class="tx"><span class="nm"><span class="n" aria-hidden="true">A</span><b data-u="shortLeft"></b></span><span class="meta"><small data-u="subLeft"></small><span class="go"><span data-u="more"></span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></span></span></a>
+    <a class="chip" data-p="project-right" href="temir/" style="--acc:var(--acc-right)"><span class="tx"><span class="nm"><span class="n" aria-hidden="true">B</span><b data-u="shortRight"></b></span><span class="meta"><small data-u="subRight"></small><span class="go"><span data-u="more"></span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></span></span></a>
+  </div>
+</nav>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
